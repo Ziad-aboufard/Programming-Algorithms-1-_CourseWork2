@@ -1,4 +1,5 @@
 import random
+
 # Function nme: removeExsistingCharacters
 # input : username (String) & characterList (String)
 # output : characterList after removing all username characters

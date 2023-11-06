@@ -1,5 +1,4 @@
 import random
-
 # Function nme: removeExsistingCharacters
 # input : username (String) & characterList (String)
 # output : characterList after removing all username characters
@@ -30,8 +29,10 @@ def generate_password(username):
     
     # Fill the rest of the password size with random choices from all the characters
     
-    # loop 4 times to add 4 random different characters
-    for i in range(4):
+    # loop from 4 to 8 times to add n random different characters
+    # passLimit is a random counter from 4 to 8
+    passLimit = random.randint(4,8)
+    for i in range(passLimit):
         # choose one random character from all lists
         randomChar = random.choice(lowercase + uppercase + specialChars + digits)
         # make sure that the random chosen character doesn't exist in my password

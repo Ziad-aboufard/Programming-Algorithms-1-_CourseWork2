@@ -1,5 +1,5 @@
 import random
-# Function nme: removeExsistingCharacters
+# Function name: removeExsistingCharacters
 # input : username (String) & characterList (String)
 # output : characterList after removing all username characters
 def removeExsistingCharacters(username, characterList):
@@ -8,7 +8,7 @@ def removeExsistingCharacters(username, characterList):
         characterList = characterList.replace(x, "")
     
     return characterList
-# Function nme: generate_password
+# Function name: generate_password
 # input : username (String) 
 # output : Generated password
 def generate_password(username):
@@ -43,7 +43,7 @@ def generate_password(username):
 
     # Join the characters into a single string and return it
     # Password is a list of characters
-    # ''.join(password) concate the characters from the list to one single string
+    # ''.join(password) concat the characters from the list to one single string
     return ''.join(password)
 
 
